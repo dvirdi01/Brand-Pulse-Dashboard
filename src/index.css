@@ -1,3 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Montserrat:wght@400;500;600&display=swap');
 @import "tailwindcss";
+
+@keyframes fadeFloat {
+  0% {
+    opacity: 0;
+    transform: translate(var(--from-x), var(--from-y)) scale(0.95) rotate(var(--rotate));
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(var(--rotate));
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1) rotate(var(--rotate));
+  }
+}
+
+.animate-fade-float {
+  opacity: 0;
+  animation: fadeFloat 1.8s ease-out forwards;
+}
