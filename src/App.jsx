@@ -1,7 +1,8 @@
 import LandingPage from "./pages/LandingPage"
+import DashBoardPage from "./pages/DashBoardPage"
 
 function App() {
-  return <LandingPage />
+  return <DashBoardPage />
 }
 
 export default App
