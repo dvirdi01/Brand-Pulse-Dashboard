@@ -14,6 +14,24 @@ export default function dashBoardPage() {
         </div>
         </div>
       </div>
+
+      <div className="bg-blue-200 flex w-full h-[600px] p-4">
+        <div className="bg-red-200 w-350">
+          <div className="w-full bg-purple-200 flex items-center justify-center"> 
+            For KPI metrics 
+          </div>
+          <div className="w-full bg-yellow-300 flex items-center justify-center">
+            For sentiment analysis graphs 
+          </div>
+          <div className="w-full bg-green-200 flex items-center justify-center">
+            For keyword blob
+          </div>
+          </div>
+          <div className="bg-gray-200 w-100">
+          For Trending comments section
+          </div>
+      </div>
+
     </div>
      
     </>
