@@ -1,3 +1,6 @@
+import KPICard from "../components/KPICard"
+import SentimentAnalysisGraph from "../components/SentimentAnalysisGraph"
+
 export default function dashBoardPage() {
   return (
     <>
@@ -15,13 +18,16 @@ export default function dashBoardPage() {
         </div>
       </div>
 
-      <div className="bg-blue-200 flex w-full h-[600px] p-4">
-        <div className="bg-red-200 w-350">
-          <div className="w-full bg-purple-200 flex items-center justify-center"> 
-            For KPI metrics 
+      <div className="bg-blue-200 flex w-full h-[600px] gap-5 p-4">
+        <div className="bg-red-200 flex flex-col gap-5 w-350">
+          <div className="w-full bg-purple-200 gap-5 flex "> 
+            <KPICard/>
+             <KPICard/>
+              <KPICard/>
           </div>
-          <div className="w-full bg-yellow-300 flex items-center justify-center">
-            For sentiment analysis graphs 
+          <div className="w-full bg-yellow-300 gap-5 flex items-center justify-center">
+            <SentimentAnalysisGraph/>
+            <KPICard/>
           </div>
           <div className="w-full bg-green-200 flex items-center justify-center">
             For keyword blob
