@@ -5,10 +5,7 @@ import { Fade } from "react-awesome-reveal";
 export default function LandingPage() {
   return (
     <>
-    <Fade cascade
-  duration={1000}
-  triggerOnce
-  fraction={0.5}>
+    <Fade cascade duration={1000} triggerOnce fraction={0.5}>
     <div className="m-30 flex flex-col items-center justify-center">
       
       <div className="max-w-2xl px-6 text-center">

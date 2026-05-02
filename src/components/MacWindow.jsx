@@ -55,7 +55,7 @@ function getRandomImages() {
     src: imageSources[index],
     top: spot.top + Math.random() * 4 - 2,
     left: spot.left + Math.random() * 4 - 2,
-    width: spot.width + Math.random() * 30 - 15,
+    width: spot.width + Math.random() * 50 - 15,
     rotation: Math.random() * 6 - 3,
     delay: index * 0.30,
     fromX: index % 2 === 0 ? -80 : 80,
