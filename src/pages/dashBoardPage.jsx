@@ -2,6 +2,7 @@ import KPICard from "../components/KPICard"
 import SentimentAnalysisGraph from "../components/SentimentAnalysisGraph"
 import { brandThemes } from "../utils/Styles";
 import TrendingCommentsCard from "../components/TrendingCommentsCard";
+import SentimentSplitGraph from "../components/SentimentSplitGraph";
 
 const selectedCompany = "Aritzia";
 const theme = brandThemes.companies[selectedCompany];
@@ -39,17 +40,15 @@ export default function dashBoardPage() {
              <KPICard metric="AVG SENTIMENT" value="+0.34" change="^ Improving" theme={theme}/>
               <KPICard metric="MOST DISCUSSED CATEGORY" value="Dresses" change="1288 posts mentions" theme={theme}/>
           </div>
-          <div className="w-full bg-yellow-300 gap-5 flex items-center justify-center">
+          <div className="w-full gap-2 flex items-center justify-center">
             <SentimentAnalysisGraph/>
-            <KPICard theme={theme} />
+            <SentimentSplitGraph theme={theme} />
           </div>
           <div className="w-full bg-green-200 flex items-center justify-center">
             For keyword blob
           </div>
           </div>
-          {/* <div className="w-90"> */}
           <TrendingCommentsCard theme={theme}/>
-          {/* </div> */}
       </div>
 
     </div>
