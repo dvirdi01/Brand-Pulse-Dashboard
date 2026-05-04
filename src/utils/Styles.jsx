@@ -3,7 +3,7 @@ export const brandThemes = {
     Aritzia: {
       primary_color: "#000000",
       secondary_color: "#ffffff",
-      tertiary_color: "#90674e",
+      tertiary_color: "#c0977e",
       label: "Aritzia",
     },
    Lululemon: {
